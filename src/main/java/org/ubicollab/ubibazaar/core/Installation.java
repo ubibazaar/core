@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.google.common.collect.Multimap;
 
 @Data
 @Builder
@@ -21,6 +20,6 @@ public class Installation {
 
   App app;
   
-  Multimap<String, String> properties;
+  String managerFeedback;
 
 }
