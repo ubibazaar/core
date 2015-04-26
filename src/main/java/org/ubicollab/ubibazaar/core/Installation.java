@@ -12,12 +12,12 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonAutoDetect
-public class User {
-
+public class Installation {
+  
   Long id;
-  
-  String username;
-  
-  String name;
+
+  Device device;
+
+  App app;
 
 }

@@ -1,5 +1,7 @@
 package org.ubicollab.ubibazaar.core;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,12 +14,16 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonAutoDetect
-public class User {
+public class Manager {
 
   Long id;
   
-  String username;
-  
   String name;
+  
+  ManagerType type;
+  
+  User owner;
+  
+  List<Device> devices;
 
 }

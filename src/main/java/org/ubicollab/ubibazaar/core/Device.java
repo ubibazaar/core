@@ -1,6 +1,20 @@
 package org.ubicollab.ubibazaar.core;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonAutoDetect
 public class Device {
+  
+  Long id;
 
   String name;
 
@@ -8,28 +22,4 @@ public class Device {
 
   User owner;
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public Platform getPlatform() {
-    return platform;
-  }
-
-  public void setPlatform(Platform platform) {
-    this.platform = platform;
-  }
-
-  public User getOwner() {
-    return owner;
-  }
-
-  public void setOwner(User owner) {
-    this.owner = owner;
-  }
-  
 }

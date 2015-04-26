@@ -2,46 +2,30 @@ package org.ubicollab.ubibazaar.core;
 
 import java.util.Map;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonAutoDetect
 public class App {
 
-  Platform platform;
+  Long id;
 
   String name;
 
+  Platform platform;
+
   User author;
-  
-  Map<String, Object> extra;
 
-  public Platform getPlatform() {
-    return platform;
-  }
+  String description;
 
-  public void setPlatform(Platform platform) {
-    this.platform = platform;
-  }
+  Map<String, String> properties;
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public User getAuthor() {
-    return author;
-  }
-
-  public void setAuthor(User author) {
-    this.author = author;
-  }
-
-  public Map<String, Object> getExtra() {
-    return extra;
-  }
-
-  public void setExtra(Map<String, Object> extra) {
-    this.extra = extra;
-  }
-  
 }

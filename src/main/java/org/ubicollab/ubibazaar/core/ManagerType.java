@@ -12,12 +12,16 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonAutoDetect
-public class User {
-
+public class ManagerType {
+  
   Long id;
   
-  String username;
-  
   String name;
+  
+  Platform platform;
+  
+  InstallationMethod installationMethod;
+
+  Cardinality devicePairingCardinality;
 
 }
