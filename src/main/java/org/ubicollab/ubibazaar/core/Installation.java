@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @JsonAutoDetect
 public class Installation {
   
-  Long id;
+  String id;
 
   Device device;
 

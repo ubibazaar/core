@@ -1,5 +1,7 @@
 package org.ubicollab.ubibazaar.core;
 
+import java.util.UUID;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,8 +16,14 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @JsonAutoDetect
 public class Platform {
 
-  Long id;
+  String id;
   
   String name;
+  
+  public static void main(String[] args) {
+    for (int i = 0; i < 50; i++) {
+      System.out.println(UUID.randomUUID().toString().replace("-", ""));
+    }
+  }
 
 }

@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @JsonAutoDetect
 public class ManagerType {
   
-  Long id;
+  String id;
   
   String name;
   
