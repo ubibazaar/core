@@ -1,5 +1,6 @@
 package org.ubicollab.ubibazaar.core;
 
+import java.util.List;
 import java.util.Map;
 
 import lombok.AllArgsConstructor;
@@ -25,6 +26,8 @@ public class App {
   User author;
 
   String description;
+  
+  List<Category> category;
 
   Map<String, String> properties;
 
