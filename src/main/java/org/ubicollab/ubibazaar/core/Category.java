@@ -20,7 +20,7 @@ public class Category {
   
   String name;
   
-  Category parent;
+  Category superCategory;
   
   Set<Category> subCategories;
 
