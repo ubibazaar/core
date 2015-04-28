@@ -1,7 +1,6 @@
 package org.ubicollab.ubibazaar.core;
 
-import java.util.List;
-import java.util.Map;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,20 +14,14 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonAutoDetect
-public class App {
-
-  String id;
-
-  String name;
-
-  Platform platform;
-
-  User author;
-
-  String description;
+public class Category {
   
-  List<Category> category;
-
-  Map<String, String> properties;
+  String id;
+  
+  String name;
+  
+  Category parent;
+  
+  Set<Category> subCategories;
 
 }
