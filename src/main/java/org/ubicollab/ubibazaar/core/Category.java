@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.google.common.collect.Sets;
@@ -23,17 +24,13 @@ public class Category {
 
   Category superCategory;
 
-  Set<Category> subCategories;
+  Set<Category> subCategories = Sets.newHashSet();
+
+  public void setSubCategories(@NonNull Set<Category> subCategories) {
+    this.subCategories = subCategories;
+  }
 
   public void addSubCategory(Category category) {
-    if (subCategories == null) {
-      synchronized (this) {
-        if (subCategories == null) {
-          subCategories = Sets.newHashSet();
-        }
-      }
-    }
-
     subCategories.add(category);
   }
 
