@@ -1,6 +1,5 @@
 package org.ubicollab.ubibazaar.core;
 
-import java.util.Map;
 import java.util.Set;
 
 import lombok.AllArgsConstructor;
@@ -29,6 +28,6 @@ public class App {
   
   Set<Category> category;
 
-  Map<String, String> properties;
+  String properties;
 
 }

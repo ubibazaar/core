@@ -1,7 +1,5 @@
 package org.ubicollab.ubibazaar.core;
 
-import java.util.Set;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +18,6 @@ public class InstallationMethod {
   
   String name;
   
-  Set<String> properties;
+  String properties;
 
 }

@@ -20,6 +20,6 @@ public class Installation {
 
   App app;
   
-  String managerFeedback;
+  String properties;
 
 }
