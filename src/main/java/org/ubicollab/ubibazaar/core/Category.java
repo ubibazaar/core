@@ -21,20 +21,20 @@ public class Category {
 
   String name;
 
-  Category superCategory;
+  Category parent;
 
-  Set<Category> subCategories;
+  Set<Category> children;
 
-  public void addSubCategory(Category category) {
-    if (subCategories == null) {
+  public void addChild(Category category) {
+    if (children == null) {
       synchronized (this) {
-        if (subCategories == null) {
-          subCategories = Sets.newHashSet();
+        if (children == null) {
+          children = Sets.newHashSet();
         }
       }
     }
 
-    subCategories.add(category);
+    children.add(category);
   }
 
 }
