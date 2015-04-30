@@ -1,6 +1,6 @@
 package org.ubicollab.ubibazaar.core;
 
-import java.util.List;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,6 +20,6 @@ public class InstallationMethod {
   
   String name;
   
-  List<String> properties;
+  Set<String> properties;
 
 }
