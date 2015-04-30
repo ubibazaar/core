@@ -19,5 +19,8 @@ public class User {
   String username;
   
   String name;
+  
+  // transient marks field not to be serialized
+  transient String password;
 
 }
