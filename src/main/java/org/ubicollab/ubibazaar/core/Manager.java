@@ -25,5 +25,7 @@ public class Manager {
   User owner;
   
   Set<Device> devices;
+  
+  String installationInstructions;
 
 }
