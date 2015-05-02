@@ -17,15 +17,17 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 public class Manager {
 
   String id;
-  
+
   String name;
-  
+
   ManagerType type;
-  
+
   User owner;
-  
+
   Set<Device> devices;
-  
+
   String installationInstructions;
+
+  Boolean installed;
 
 }
