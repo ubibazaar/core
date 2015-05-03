@@ -1,5 +1,6 @@
 package org.ubicollab.ubibazaar.core;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import lombok.AllArgsConstructor;
@@ -8,7 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.google.common.collect.Sets;
 
 @Data
 @Builder
@@ -29,7 +29,7 @@ public class Category {
     if (children == null) {
       synchronized (this) {
         if (children == null) {
-          children = Sets.newHashSet();
+          children = new HashSet<Category>();
         }
       }
     }
