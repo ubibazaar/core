@@ -18,8 +18,6 @@ public class Manager {
 
   String id;
 
-  String name;
-
   ManagerType type;
 
   User owner;
